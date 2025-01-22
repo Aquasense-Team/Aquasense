@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquasense</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f8fb;
+        }
+
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .login-btn {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .login-btn:hover {
+            background: #005f87;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            color: #0077b6;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #0077b6;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0077b6;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aquasense</h1>
+        <p>Ensuring clean and safe water for everyone</p>
+        <a href="loading.html" class="login-btn">Login</a>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to Our Water Quality Project</h2>
+            <p>Learn about water quality, its importance, and how we can make a difference.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" alt="Water Testing">
+                <h3>Water Testing</h3>
+                <p>Discover the latest methods and technologies for water testing.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" alt="Water Pollution">
+                <h3>Water Pollution</h3>
+                <p>Understand the sources of pollution and how to combat them.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" alt="Conservation Tips">
+                <h3>Conservation Tips</h3>
+                <p>Learn how you can save water and protect our natural resources.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>2025 &copy; Aquasense. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

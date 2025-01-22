@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/sty.css">
+    <title>Aquasense</title>
+</head>
+
+<body>
+    <header>
+        <h1>Aquasense</h1>
+        <nav>
+            <a href="#" class="login-btn">Home</a>
+            <a href="about.html" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+            <a href="Signin.html" class="login-btn">Sign IN / UP</a>
+        </nav>
+    </header>
+
+    <pre>
+            <h2>Protect Our Water, Protect Our Future</h2>
+            <h3>Learn how to test, conserve, and improve water quality.</h3>
+        </pre>
+
+    <section class="section">
+        <div class="cards">
+            <div class="card">
+                <img src="images/download.jpg" alt="Testing Water">
+                <a id="protected-link" href="Sensor_Data_Dashboard_testing.html">
+                    <div class="text">
+                        <h3>Water Testing</h3>
+                        <p>Discover how to measure water quality effectively.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <img src="images/download (1).jpg" alt="Polluted Water">
+                <a href="pollution.html">
+                    <div class="text">
+                        <h3>Solve water Pollution</h3>
+                        <p>Understand the causes and solutions for water pollution.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <img src="images/images.jpg" alt="Water Conservation">
+                <a href="Conservation.html">
+                    <div class="text">
+                        <h3>Water Conservation</h3>
+                        <p>Explore tips to save water in your daily life.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 &copy; Aquasense Team. All rights reserved.</p>
+    </footer>
+    <script>
+        let isUserLoggedIn = false;
+
+        const link = document.getElementById('protected-link');
+
+        link.addEventListener('click', function (event) {
+            if (!isUserLoggedIn) {
+                event.preventDefault();
+                alert("Please register or log in first!");
+                window.location.href = "Signin.html";
+            }
+        });
+    </script>
+</body>
+
+</html>

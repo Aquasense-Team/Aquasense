@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Aquasense</title>
+    <link rel="stylesheet" href="./styles/signin.css">
+    <link rel="stylesheet" href="./styles/HomeStyle.css">
+    <style>
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 8px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aquasense</h1>
+        <p>Ensuring clean and safe water for everyone</p>
+    </header>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="./loadingSignin.html" method="post">
+            <input type="text" placeholder="Full Name" name="fullname">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Confirm Password" name="confirmPassword">
+            <input type="number" placeholder="Phone Number" name="phoneNumber">
+            <input type="text" placeholder="Country" name="country">
+            <a href="loadingSignin.html"><input type="submit" value="Sign Up"></a>
+
+        </form>
+
+        <a href="Signin.html">Already have an account? Sign In</a>
+    </div>
+</body>
+
+</html>
