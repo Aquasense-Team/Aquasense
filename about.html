@@ -22,41 +22,83 @@
             padding-bottom: 150px;
         }
 
+        nav .login-btn {
+            background: #fff;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        nav .login-btn:hover {
+            background: #005f87;
+            color: #fff;
+        }
+
         header {
-            background-color: #0077b6;
+            background: #0077b6;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         header h1 {
+            font-family: Baloo;
+            font-size: 35px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        #aboutSection {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            border-radius: 35px;
+            padding: 30px 50px;
+            max-width: 860px;
+            /* margin-bottom: 70px; */
+            margin: 70px auto;
+
+            /* border-radius: 555px;
+            padding: 30px 70px;
+            max-width: 900px;
+            height: 450px; */
+        }
+
+        #aboutSection h1 {
             font-size: 2.5rem;
         }
 
-        section {
+        #aboutSection h2 {
+            margin: 55px 0 25px;
+        }
+
+        #aboutSection p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        #teamSection {
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-        section#aboutSection {
-            max-width: 900px;
-            padding: 50px 0;
-        }
-
-        section#teamSection {
-            max-width: 1000px;
-        }
-
-        section h2 {
+        #teamSection h2 {
             text-align: center;
             color: #0077b6;
             font-size: 2rem;
             margin-bottom: 30px;
-        }
-
-        section p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-            text-align: justify;
         }
 
         .team {
@@ -87,7 +129,7 @@
 
         .team-member:hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: #333 1px solid; 
+            border: #333 1px solid;
         }
 
         .team-member img {
@@ -104,7 +146,8 @@
             text-align: center;
         }
 
-        .team-member p,pre {
+        .team-member p,
+        pre {
             font-size: 0.9rem;
             color: #555;
             text-align: center;
@@ -124,18 +167,21 @@
             right: 0;
             bottom: 0;
         }
-
-        footer p {
-            margin: 0;
-        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>About Us</h1>
+        <h1>Aquasense</h1>
+        <nav>
+            <a href="index.html" class="login-btn">Home</a>
+            <a href="#" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+            <a href="Signin.html" class="login-btn">Sign IN / UP</a>
+        </nav>
     </header>
     <section id="aboutSection">
+        <h1>About Us</h1>
         <h2>Who We Are</h2>
         <p>
             At AI Empowered Water Quality Monitoring, we are committed to ensuring

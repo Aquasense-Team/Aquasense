@@ -7,20 +7,58 @@
     <link rel="stylesheet" href="./styles/signin.css" />
     <title>Login - Aquasense</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav .login-btn {
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        nav .login-btn:hover {
+            background: #005f87;
+            color: #fff;
+        }
+
         header {
             background: #0077b6;
-            color: #fff;
-            padding: 8px 0;
-            text-align: center;
-            position: relative;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-family: Baloo;
+            font-size: 35px;
         }
 
-        header p {
-            font-size: 1.2rem;
+        header nav {
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -28,14 +66,22 @@
 <body>
     <header>
         <h1>Aquasense</h1>
-        <p>Ensuring clean and safe water for everyone</p>
+        <nav>
+            <a href="index.html" class="login-btn">Home</a>
+            <a href="about.html" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+            <a href="Signup.html" class="login-btn">Sign IN / UP</a>
+        </nav>
     </header>
     <div class="container">
+        <h2>Sign IN</h2>
+        <p>Ensuring clean and safe water for everyone</p>
         <div>
             <img src="images/download_no_bg.png" class="img" />
         </div>
         <!-- <form action="loadingHome.html" method="post"> -->
-        <form action="Sensor_Data_Dashboard_testing.html">
+        <!-- <form action="Sensor_Data_Dashboard_testing.html"> -->
+        <form action="loadingHome.html">
             <input type="text" placeholder="Username" name="username" required />
             <input type="password" placeholder="Password" name="password" required />
             <input type="submit" value="Sign In" />
